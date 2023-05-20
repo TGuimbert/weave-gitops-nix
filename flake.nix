@@ -16,6 +16,7 @@
             pkgs = nixpkgs.legacyPackages.${system};
           in
           with pkgs; {
+            default = self.packages.${system}.gitops;
             gitops = buildGoModule rec {
               pname = "gitops";
               version = "0.23.0";
