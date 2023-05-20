@@ -18,12 +18,11 @@ A minimal flake to use this package in a dev shell environment with `nix develop
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      gitops = weave-gitops-nix.packages.${system}.gitops;
     in
     {
       devShell.${system} = pkgs.mkShell {
         packages = [
-          gitops
+          weave-gitops-nix.packages.${system}.gitops
         ];
       };
     };
