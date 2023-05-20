@@ -69,6 +69,7 @@
                     statix.enable = true;
                     actionlint.enable = true;
                     yamllint.enable = true;
+                    markdownlint.enable = true;
                   };
                 }
               ];
