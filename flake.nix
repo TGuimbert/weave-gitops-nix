@@ -19,7 +19,7 @@
             default = self.packages.${system}.gitops;
             gitops = buildGoModule rec {
               pname = "gitops";
-              version = "0.23.0";
+              version = "0.29.0";
 
               src = fetchFromGitHub {
                 owner = "weaveworks";
